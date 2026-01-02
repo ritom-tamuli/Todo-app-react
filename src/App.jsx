@@ -1,11 +1,18 @@
 import './App.css'
+import AddTodo from './components/AddTodo'
+import Navbar from './components/Navbar'
+import Todos from './components/Todos'
 
 function App() {
 
 
   return (
     <>
-      <h1>Todo App</h1>
+      <Navbar />
+      <div className='flex flex-col w-[500px] mx-auto items-center mt-[32px]'>
+        <AddTodo />
+        <Todos />
+      </div>
     </>
   )
 }
